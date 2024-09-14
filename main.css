@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav 
+{
+    background-color: black;
+    color:white ;
+    height: 80px;
+    font-size: 27px;
+    display: flex ;
+    align-items: center ;
+    padding:0 10px ;
+    /* margin: 0px 10px ; */
+    font-family: "Protest Guerrilla", sans-serif;
+}
+nav ul{
+    list-style-type: none ;
+}
+
+.gamecontainer
+{
+    /* background-color: burlywood ; */
+    display: flex ;
+    justify-content: center;
+    margin-top: 50px;
+    /* font-family: "Protest Guerrilla", sans-serif; */
+}
+
+.container{
+    background-color: burlywood ;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    /* font-family: "Protest Guerrilla", sans-serif ; */
+    position: relative;
+}
+ #head{
+    font-style: italic ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-size: 50px;
+} 
+.box{
+    border:2px solid black ;
+    font-size: 8vw ;
+    cursor: pointer ;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    /* border-top: 0; */
+    /* border-left: 0; */
+    /* border-bottom: 0; */
+    /* border-right: 0; */
+    
+}
+.box:hover{
+    background-color: beige;
+}
+.info{
+    font-size: 35px;
+    font-style: italic;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.gameinfo{
+    padding: 0 34px ;
+    /* font-family: "Protest Guerrilla", sans-serif;     */
+}
+
+.image img{
+    /* display: none ; */
+    width: 0 ;
+    transition: width 1s ease-in-out ;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 1px 10px;
+    background-color: beige;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: medium;
+    font-weight: bold;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: rebeccapurple;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 800px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1rem;
+    }
+    /* .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    } */
+    #reset{
+        margin-top: 15px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-review {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .footer-rights {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
